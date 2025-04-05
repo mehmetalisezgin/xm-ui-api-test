@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["count", "results"],
+  "properties": {
+    "count": { "type": "integer" },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "height", "mass", "gender"],
+        "properties": {
+          "name": { "type": "string" },
+          "height": { "type": "string" },
+          "mass": { "type": "string" },
+          "gender": { "type": "string" }
+        }
+      }
+    }
+  }
+}
