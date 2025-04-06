@@ -63,12 +63,7 @@
         <version>2.0.13</version>
         <scope>compile</scope>
     </dependency>
-    <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.32</version>
-        <scope>provided</scope>
-    </dependency>
+
     <dependency>
         <groupId>org.json</groupId>
         <artifactId>json</artifactId>
@@ -85,6 +80,15 @@
         <version>5.1.2</version>
     </dependency>
 </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

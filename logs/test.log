@@ -1,0 +1,56 @@
+2025-04-06 19:06:25,337 DEBUG [SETUP TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:06:25,343 DEBUG setUpDriver(Browser: firefox, Remote: false, Headless: false)
+2025-04-06 19:06:35,556 DEBUG isExpectedTitleDisplayed()
+2025-04-06 19:06:35,557 DEBUG getPageTitle()
+2025-04-06 19:06:35,575 DEBUG verifyHomePage()
+2025-04-06 19:06:40,605 DEBUG verifyEconomicCalendarPage()
+2025-04-06 19:06:45,429 DEBUG [END TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:06:45,430 DEBUG quitDriver()
+2025-04-06 19:06:46,413 DEBUG [SETUP TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:06:46,413 DEBUG setUpDriver(Browser: firefox, Remote: false, Headless: false)
+2025-04-06 19:06:52,750 DEBUG isExpectedTitleDisplayed()
+2025-04-06 19:06:52,751 DEBUG getPageTitle()
+2025-04-06 19:06:52,759 DEBUG verifyHomePage()
+2025-04-06 19:06:57,563 DEBUG verifyEconomicCalendarPage()
+2025-04-06 19:07:02,306 DEBUG [END TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:07:02,307 DEBUG quitDriver()
+2025-04-06 19:07:03,172 DEBUG [SETUP TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:07:03,172 DEBUG setUpDriver(Browser: firefox, Remote: false, Headless: false)
+2025-04-06 19:07:10,050 DEBUG isExpectedTitleDisplayed()
+2025-04-06 19:07:10,050 DEBUG getPageTitle()
+2025-04-06 19:07:10,055 DEBUG verifyHomePage()
+2025-04-06 19:07:14,935 DEBUG verifyEconomicCalendarPage()
+2025-04-06 19:07:19,680 DEBUG [END TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:07:19,680 DEBUG quitDriver()
+2025-04-06 19:28:14,312 DEBUG [SETUP TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:28:14,330 DEBUG setUpDriver(Browser: chrome, Remote: false, Headless: false)
+2025-04-06 19:28:20,774 DEBUG isExpectedTitleDisplayed()
+2025-04-06 19:28:20,774 DEBUG getPageTitle()
+2025-04-06 19:28:20,794 DEBUG verifyHomePage()
+2025-04-06 19:28:25,135 DEBUG verifyEconomicCalendarPage()
+2025-04-06 19:28:30,043 DEBUG [END TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:28:30,044 DEBUG quitDriver()
+2025-04-06 19:49:25,067 DEBUG [SETUP TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:49:25,072 DEBUG setUpDriver(Browser: chrome, Remote: false, Headless: false)
+2025-04-06 19:49:29,454 DEBUG isExpectedTitleDisplayed()
+2025-04-06 19:49:29,454 DEBUG getPageTitle()
+2025-04-06 19:49:29,472 DEBUG verifyHomePage()
+2025-04-06 19:49:33,763 DEBUG verifyEconomicCalendarPage()
+2025-04-06 19:49:38,997 DEBUG [END TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:49:38,997 DEBUG quitDriver()
+2025-04-06 19:49:39,222 DEBUG [SETUP TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:49:39,223 DEBUG setUpDriver(Browser: chrome, Remote: false, Headless: false)
+2025-04-06 19:49:43,432 DEBUG isExpectedTitleDisplayed()
+2025-04-06 19:49:43,432 DEBUG getPageTitle()
+2025-04-06 19:49:43,448 DEBUG verifyHomePage()
+2025-04-06 19:49:47,733 DEBUG verifyEconomicCalendarPage()
+2025-04-06 19:49:52,452 DEBUG [END TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:49:52,453 DEBUG quitDriver()
+2025-04-06 19:49:52,636 DEBUG [SETUP TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:49:52,636 DEBUG setUpDriver(Browser: chrome, Remote: false, Headless: false)
+2025-04-06 19:49:55,450 DEBUG isExpectedTitleDisplayed()
+2025-04-06 19:49:55,450 DEBUG getPageTitle()
+2025-04-06 19:49:55,482 DEBUG verifyHomePage()
+2025-04-06 19:49:59,751 DEBUG verifyEconomicCalendarPage()
+2025-04-06 19:50:04,516 DEBUG [END TEST] tests.UI.EconomicCalendarTests
+2025-04-06 19:50:04,516 DEBUG quitDriver()

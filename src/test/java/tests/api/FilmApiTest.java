@@ -80,7 +80,7 @@ public class FilmApiTest {
             }
         }
         Assert.assertNotNull(latestFilm, "Latest film should not be null");
-        System.out.println("Latest film using POJO: " + latestFilm.getTitle() + " (" + latestFilm.getRelease_date() + ")");
+        System.out.println("Latest film using POJO: " + latestFilm.getTitle() + " (" + latestFilm.getRelease_date()+ ")");
     }
 
 }
