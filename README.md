@@ -12,36 +12,6 @@ This project is designed as part of an interview task and demonstrates UI and AP
 - **Rest Assured**
 
 ## Project Structure
-xm-ui-api-automation-framework/
-├── .idea/                         # IntelliJ project settings
-├── logs/                          # Log files (if applicable)
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── data/              # Test data, constants
-│   │   │   ├── objects/           # POJOs for data models
-│   │   │   ├── pages/             # Page Object Model classes
-│   │   │   └── utils/             # Utility/helper classes
-│   │   └── resources/
-│   │       ├── javascript/        
-│   │       ├── timeouts/
-│   │       ├── common.properties  # Environment configs (e.g. browser, URL)
-│   │       └── log4j2.properties  # Logging configuration
-│
-│   └── test/
-│       ├── java/
-│       │   └── tests/
-│       │       ├── api/           # API test classes
-│       │       └── ui/            # UI test classes
-│       └── resources/
-│           └── people-schema.json # JSON schema for API response validation
-│
-├── target/                        # Compiled output (ignored by Git)
-├── .gitignore
-├── pom.xml                        # Maven project file
-└── README.md                      # Project overview and instructions
-
-## 📁 Project Structure
 
 ```text
 xm-ui-api-automation-framework/
