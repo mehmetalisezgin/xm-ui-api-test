@@ -1,7 +1,6 @@
 package objects;
 
 
-
 import java.util.List;
 
 public class FilmData {
@@ -19,7 +18,6 @@ public class FilmData {
     private String created;
     private String edited;
     private String url;
-
 
 
     public FilmData() {
@@ -156,5 +154,23 @@ public class FilmData {
         this.url = url;
     }
 
-
+    @Override
+    public String toString() {
+        return "FilmData{" +
+                "title='" + title + '\'' +
+                ", episode_id=" + episode_id +
+                ", opening_crawl='" + opening_crawl + '\'' +
+                ", director='" + director + '\'' +
+                ", producer='" + producer + '\'' +
+                ", release_date='" + release_date + '\'' +
+                ", characters=" + characters +
+                ", planets=" + planets +
+                ", starships=" + starships +
+                ", vehicles=" + vehicles +
+                ", species=" + species +
+                ", created='" + created + '\'' +
+                ", edited='" + edited + '\'' +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }
