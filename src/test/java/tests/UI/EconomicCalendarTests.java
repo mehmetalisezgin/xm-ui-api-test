@@ -17,15 +17,17 @@ public class EconomicCalendarTests extends BaseTestClass {
 
     private WebDriver driver;
     private final String sTestName = this.getClass().getName();
-    HomePage homePage = new HomePage(driver);
-    EconomicCalendarPage economicCalendarPage = new EconomicCalendarPage(driver);
-    JavaScriptUtils javaScriptUtils = new JavaScriptUtils();
+    private HomePage homePage;
+    private EconomicCalendarPage economicCalendarPage;
+    private final JavaScriptUtils javaScriptUtils = new JavaScriptUtils();
 
     @BeforeMethod
     public void setUp(ITestContext testContext) {
         LoggerUtils.log.debug("[SETUP TEST] " + sTestName);
         driver = setUpMaxResolution();
         testContext.setAttribute(sTestName + ".drivers", new WebDriver[]{driver});
+        homePage = new HomePage(driver);
+        economicCalendarPage = new EconomicCalendarPage(driver);
         CommonPageClass commonPageClass = new CommonPageClass(driver);
         commonPageClass.isExpectedTitleDisplayed("Access Global Financial Markets and Start Trading | XM");
         homePage.verifyHomePage();
