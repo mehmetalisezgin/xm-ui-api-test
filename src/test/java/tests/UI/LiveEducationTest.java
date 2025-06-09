@@ -19,15 +19,17 @@ public class LiveEducationTest extends BaseTestClass {
     private WebDriver driver;
     private final String sTestName = this.getClass().getName();
     private boolean bCreated = false;
-    HomePage homePage = new HomePage(driver);
-    LiveEducationPage liveEducationPage = new LiveEducationPage(driver);
-    JavaScriptUtils javaScriptUtils = new JavaScriptUtils();
+    private HomePage homePage;
+    private LiveEducationPage liveEducationPage;
+    private final JavaScriptUtils javaScriptUtils = new JavaScriptUtils();
 
     @BeforeMethod
     public void setUp(ITestContext testContext) {
         LoggerUtils.log.debug("[SETUP TEST] " + sTestName);
         driver = setUpMaxResolution();
         testContext.setAttribute(sTestName + ".drivers", new WebDriver[]{driver});
+        homePage = new HomePage(driver);
+        liveEducationPage = new LiveEducationPage(driver);
         CommonPageClass commonPageClass = new CommonPageClass(driver);
         commonPageClass.isExpectedTitleDisplayed("Access Global Financial Markets and Start Trading | XM");
         homePage.verifyHomePage();
