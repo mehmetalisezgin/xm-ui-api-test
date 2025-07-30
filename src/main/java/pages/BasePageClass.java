@@ -293,6 +293,16 @@ public abstract class BasePageClass {
         js.executeScript("arguments[0].click()", element);
     }
 
+    protected void click(By locator) {
+        LoggerUtils.log.trace("click(" + locator + ")");
+        clickOnWebElement(getWebElement(locator));
+    }
+
+    protected void click(By locator, int timeout) {
+        LoggerUtils.log.trace("click(" + locator + ", " + timeout + ")");
+        clickOnWebElement(getWebElement(locator, timeout));
+    }
+
     protected void typeTextToWebElement(WebElement element, String text) {
         LoggerUtils.log.trace("typeTextToWebElement(" + element + ", " + text + ")");
         element.sendKeys(text);
