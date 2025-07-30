@@ -43,24 +43,24 @@ public class HomePage extends CommonPageClass{
     }
 
     public void clickAcceptCookies() {
-        clickOnWebElement(getWebElement(acceptCookies));
+        click(acceptCookies);
     }
 
     public void clickDiscoverMenu() {
-        clickOnWebElement(getWebElement(discoverMenu));
+        click(discoverMenu);
     }
 
     public void clickEconomicCalendar() {
-        clickOnWebElement(getWebElement(economicCalendarLink));
+        click(economicCalendarLink);
     }
 
     public void clickLiveEducation() {
-        clickOnWebElement(getWebElement(liveEducationLink));
+        click(liveEducationLink);
     }
 
     public HomePage loginToPlatform(String username, String password) {
         LoggerUtils.log.debug("loginToPlatform(" + username + ")");
-        clickOnWebElement(getWebElement(memberLoginButton));
+        click(memberLoginButton);
 
         WebElement userField = getWebElement(usernameInput, Time.TIME_SHORTER);
         clearAndTypeTextToWebElement(userField, username);
