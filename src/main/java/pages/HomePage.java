@@ -19,6 +19,12 @@ public class HomePage extends CommonPageClass{
     private final By liveEducationLink = By.xpath("(//div[normalize-space()='Live Education'])[1]");
     private final By acceptCookies = By.xpath("//button[contains(., 'Accept All')]");
 
+    // Locators used for logging into the platform
+    private final By memberLoginButton = By.cssSelector("a[href*='login']");
+    private final By usernameInput = By.cssSelector("input[name='username']");
+    private final By passwordInput = By.cssSelector("input[name='password']");
+    private final By signInButton = By.cssSelector("button[type='submit']");
+
 
     public HomePage open(boolean bVerify) {
         LoggerUtils.log.debug("open(" + HOME_PAGE_URL + ")");
@@ -50,6 +56,22 @@ public class HomePage extends CommonPageClass{
 
     public void clickLiveEducation() {
         clickOnWebElement(getWebElement(liveEducationLink));
+    }
+
+    public HomePage loginToPlatform(String username, String password) {
+        LoggerUtils.log.debug("loginToPlatform(" + username + ")");
+        clickOnWebElement(getWebElement(memberLoginButton));
+
+        WebElement userField = getWebElement(usernameInput, Time.TIME_SHORTER);
+        clearAndTypeTextToWebElement(userField, username);
+
+        WebElement passField = getWebElement(passwordInput, Time.TIME_SHORTER);
+        clearAndTypeTextToWebElement(passField, password);
+
+        WebElement loginBtn = getWebElement(signInButton, Time.TIME_SHORTER);
+        clickOnWebElement(waitForWebElementToBeClickable(loginBtn, Time.TIME_SHORTER));
+
+        return this;
     }
 
 }
